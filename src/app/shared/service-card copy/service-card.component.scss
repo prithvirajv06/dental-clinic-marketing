@@ -1,0 +1,88 @@
+.slider-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(300px * 6);
+  /* Width of each card × number of cards */
+  animation: slideAnimation 15s linear infinite;
+}
+
+/* Pause animation on hover */
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-300px * 3));
+    /* Move by half the track width */
+  }
+}
+
+.card {
+  flex: 0 0 300px;
+  height: 380px;
+  margin-right: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  height: 180px;
+  width: inherit;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.card p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Clone the first 3 cards to create a seamless loop */
+.card:nth-child(n+7) {
+  display: none;
+}

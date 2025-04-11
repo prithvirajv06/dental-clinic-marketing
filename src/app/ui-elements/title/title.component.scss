@@ -1,0 +1,15 @@
+@import '../../../../public/scss/variable.scss';
+*{
+  color: $secondary;
+}
+
+h2{
+  font-weight: 600;
+}
+
+.line{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $secondary;
+  width: 600px;
+}

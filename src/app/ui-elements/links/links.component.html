@@ -1,0 +1,5 @@
+@if (cId) {
+  <a (click)="navigateTo()">{{lable}}</a>
+}@else {
+<a [routerLink]="linkRoute" routerLinkActive="router-link-active">{{lable}}</a>
+}
