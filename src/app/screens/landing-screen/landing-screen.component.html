@@ -5,7 +5,11 @@
         <h1>We Provide High <span>Quality</span> Dental Services</h1>
         <h4>Premier multispecialty dental care, now within reach.</h4>
         <p>From routine check-ups to specialized treatments, we deliver high-quality care tailored to your needs.</p>
-        <a class="btn btn-primary" href="tel:812396692">
+        <!-- <a class="btn btn-primary" href="tel:8123965002">
+          <i class="fa-solid fa-phone"></i> Book Appointment
+        </a> -->
+
+        <a class="btn btn-primary" href="https://click4appointment.com/clinic-details/zenrootsdental-4212">
           <i class="fa-solid fa-phone"></i> Book Appointment
         </a>
       </div>
@@ -47,7 +51,7 @@
                 <div style="display: block;">
                   <i class="fa fa-phone"></i>
                   <br>
-                  <a href="tel:812396692">
+                  <a href="tel:8123965002">
                     <span>Call for
                       appointment</span>
                   </a>
@@ -219,15 +223,92 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <div class="doctor-card">
+        <div class="doctor-card" style="cursor: pointer;" (click)="showProfile=true">
           <!-- <img src="doctor-image.jpg" alt="Dr. Jane Smith" class="doctor-image"> -->
           <div class="doctor-info">
-            <h3 class="doctor-name">Dr Mrudhula K (Owner)</h3>
+            <h3 class="doctor-name"><a style="text-decoration: underline;">Dr Mrudhula K (Owner)</a></h3>
             <p class="doctor-specialty">Endodontist</p>
           </div>
         </div>
       </div>
+      @if (showProfile) {
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-xs-12">
+            <div class="col-md-12 col-lg-12 col-xs-12 "
+              style="float:left; padding: 10px; padding-top: 20px; background: white;">
+              <div class="col-md-2 col-lg-2 mobile-20" style="float:left; padding: 0; text-align: center; ">
+                <img class="img-fluid"
+                  src="https://click4appointment1.s3.ap-south-1.amazonaws.com/assets/profile-pictures/961788-MRUDHULAK-1747818721.jpg"
+                  alt="MRUDHULA K" style="width: 100px;">
+              </div>
+              <div class="col-md-10 col-lg-10 col-xs-10 mobile-80" style="float:left;">
+                <h1 class="col-md-6 col-lg-6 col-xs-12"
+                  style=" font-size: 22px;  color: #333;  font-weight: 500; padding: 0; ">Dr. MRUDHULA K</h1>
+                <span class="help">BDS, MDS</span> <br>
+                <span class="help"> Endodontist ( Root Canal Specialist) And Conservative Dentist </span> <br>
+                <span class="help">11 + Years Experience</span> <br>
+                <span class="help">Visits : </span><br>
+                <a href="https://click4appointment.com/clinic-details/zenrootsdental-4212" style="color:blue;"
+                  target="_blank" class="name-width-mobile">ZenRoots Dental - Nagasandra</a><br>
+                <br>
+                <br>
+              </div>
 
+              <div class="col-md-12 col-lg-12 col-xs-12" style="float:left;">
+                <h3 style="font-size: 20px;  color: #333;  font-weight: 500;"> About Dr. MRUDHULA K</h3>
+                <hr>
+                <p></p>
+                <p>Dr. Mrudhula’s educational background from the prestigious Government Dental College and Research
+                  Institute, under Rajiv Gandhi University, is a strong testament to her expertise. Completing both
+                  undergraduate and postgraduate studies at a renowned institution indicates a solid foundation in
+                  dentistry and endodontics, as well as exposure to high standards of clinical practice and
+                  research.<br>The Government Dental College and Research Institute is known for its rigorous training
+                  and emphasis on both clinical skills and academic knowledge, providing graduates with a comprehensive
+                  education. Rajiv Gandhi University’s affiliation adds another layer of prestige, reflecting a
+                  commitment to excellence in dental education.</p>
+                <p>Her training from such a reputable institution contributed significantly to her ability to perform
+                  complex procedures and approach patient care with empathy and skill.</p>
+                <p>Dr. Mrudhula’s extensive experience and expertise in treating complex endodontic procedures,
+                  aesthetic restorations, veneers, and smile designing highlight her advanced skills and deep knowledge
+                  in these areas. Performing over 10,000 procedures underscores her proficiency and dedication to her
+                  field. Here’s a bit more about each area of her expertise:</p>
+                <p>Complex Endodontic Procedures: This involves intricate root canal treatments and other advanced
+                  techniques to save teeth that are severely damaged or infected. Expertise in this area means she can
+                  handle difficult cases that may involve complex root systems or challenging anatomy.</p>
+                <p>Aesthetic Restorations: This includes using materials and techniques to restore the natural
+                  appearance and function of teeth, focusing on achieving results that blend seamlessly with the
+                  patient’s natural dentition.</p>
+                <p>Composite Veneers: Dr. Mrudhula’s skill in placing veneers suggests she can transform a patient’s
+                  smile by covering imperfections with thin layers of tooth-coloured resin applied to the front surface
+                  of teeth to improve both the look and function of their teeth.</p>
+                <p>Smile Designing: This involves planning and executing treatments to enhance a patient’s overall
+                  smile, taking into account various factors like tooth alignment, colour, and shape to create a
+                  harmonious and aesthetically pleasing result.</p>
+                <p>Her experience of over a decade means she’s likely kept up with the latest advancements in technology
+                  and techniques, ensuring her patients receive the most effective and up-to-date care.</p>
+                <p>Dr. Mrudhula's empathetic and holistic approach, combined with expertise in complex treatments, its a
+                  great combination for delivering comprehensive dental care. An empathetic approach ensures that
+                  patients feel understood and supported throughout their treatment, which can significantly enhance
+                  their overall experience and outcomes. A holistic approach means she considers the whole patient,
+                  including their overall health and well-being, not just the immediate dental issue.</p>
+                <p>Her expertise in performing complex treatments suggests that she can handle challenging cases with
+                  skill and precision, likely incorporating advanced techniques and materials. This dual focus on
+                  empathy and expertise can make a significant difference in patient satisfaction and the effectiveness
+                  of dental treatments.</p>
+                <p>Dr. Mrudhula has deep insights into the latest advancements, innovations, and best practices in this
+                  field. Her research in restorative dentistry includes the development of new materials, improving the
+                  longevity and aesthetic outcomes of restorations, and understanding how different materials interact
+                  with the dental environment. Her multiple research article publications further highlight her
+                  commitment to advancing the field of dentistry.</p>
+                <p></p>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
       <div class="col-md-3">
         <div class="doctor-card">
           <!-- <img src="doctor-image.jpg" alt="Dr. Jane Smith" class="doctor-image"> -->
@@ -344,43 +425,6 @@
 </section>
 <br>
 <br>
-<section>
-  <div class="container">
-    <app-title lable="Our Patients' Speaks"></app-title>
-    <div class="row">
-
-      <!-- Video 1 -->
-      <div class="col-md-3 mb-4">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <!-- Video 2 -->
-      <div class="col-md-3 mb-4">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-
-
-      <!-- Video 3 -->
-      <div class="col-md-3 mb-4">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <!-- Video 4 -->
-      <div class="col-md-3 mb-4">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 
 <section id="contactUs">
@@ -401,8 +445,8 @@
         <h3>MAKE AN APPOINTMENT
         </h3>
         <br>
-        <a href="tel:812396692">
-          <i class="fa-solid fa-phone"></i> 812396692
+        <a href="tel:8123965002">
+          <i class="fa-solid fa-phone"></i> 8123965002
         </a>
         <br>
 
